@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.App{
+  background: #E9D3ff;
+  width: 100%;
+  padding: 20px;
+}
+.container{
+  background: #FFEFFF;
+  max-width: 900px;
+  border-radius: 8px;
+  margin: 82px auto;
+  padding: 82px 22px;
+  position: relative;
+  
+}
+.clean-mock{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  display: flex;
+  column-gap: 4px;
+  padding: 10px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.fa-camera-retro{
+  color: black;
+}
+.clean-mock > p{
+  font-weight: 600;
+}
+.main-container{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 0px rgba(0,0,0,.2),
+              -2px -2px 1px 0px rgba(0,0,0,.2);
+  padding: 20px;
+}
+.form-container{
+  background:#FFFFFF; 
+  border: 2px dotted black;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  //background: red;
+  padding: 40px;
+  width: 600px;
+  text-align: center;
+}
+.card-image{
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  margin: 0 auto;
+  //padding: 5px;
+}
+.card-pic{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.card h4{
+  font-size: 30px;
+}
+
+.card span{
+    display: block;
+   font-size: 20px;
+}
+label{
+  display: block;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #0000FF;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 4px;
+  margin: 16px auto;
+  padding: 4px 4px;
+}
+input{
+  display: none;
+}
