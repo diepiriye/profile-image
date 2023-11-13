@@ -11,7 +11,7 @@
 }
 .container{
   background: #FFEFFF;
-  max-width: 900px;
+  max-width: 600px;
   border-radius: 8px;
   margin: 82px auto;
   padding: 82px 22px;
@@ -58,7 +58,7 @@
 .card{
   //background: red;
   padding: 40px;
-  width: 600px;
+  width: 400px;
   text-align: center;
 }
 .card-image{
@@ -67,11 +67,11 @@
   background: transparent;
   margin: 0 auto;
   //padding: 5px;
+  z-index: 4;
 }
 .card-pic{
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: cover;
   object-position: center;
 }
@@ -98,4 +98,33 @@ label{
 }
 input{
   display: none;
+}
+/**** STYLING THE PICTURE SPACE ******/
+.picture-space{
+  background: #FFFFFF;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px
+}
+.picture-image-container{
+  background: blue;
+  width: 200px;
+  height: 250px; 
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+.picture-image{
+  width: 100%;
+  height: 200px;
+  //border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+ 
+}
+.delete{
+  display: block;
+  padding: 2px 10px;
+  font-size: 16px;
 }
