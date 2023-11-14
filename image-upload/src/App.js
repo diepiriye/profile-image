@@ -16,11 +16,6 @@ function App() {
     setPhoto(pictureMap)
   }
   
-  function removeMe(index){
-    const own = photo.filter((value,index,arr)=> arr.indexOf(value) !== index )
-    setPhoto(own);
-  }
-  
   return (
     <div className="App">
       <div className="container">
@@ -47,11 +42,12 @@ function App() {
         </div>   
       </div>
       <div className="picture-space">
-        {photo && photo.map((pic,index,arr)=>{
+        {photo && photo.map((pic,index)=>{
           return(
           <div className="picture-image-container" key={pic.toString()}>
             <img src={pic} alt="" className="picture-image"/>
-            <button className="delete" onClick={()=>removeMe(arr.indexOf(pic))}>Delete</button>
+            <button className="delete" onClick={()=>setPhoto(photo.filter((image)=> image !== pic))}>Delete</button>
+            
           </div>
           );
         })}  
