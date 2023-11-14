@@ -14,6 +14,7 @@ function App() {
     })
     console.log(pictureMap)
     setPhoto(pictureMap)
+    setPhoto((phto)=> ([...photo,pictureMap]))
   }
   
   return (
